@@ -36,9 +36,9 @@ const Home = () => {
                         
                         <div style={{  marginTop: 5, marginBottom: 20 }}>
                         <lu>
-                            <li>un atelier social et solidaire situé à Gabès. </li>
-                            <li>Nos produits sont tous fabriqués à partir de matériaux issus du recyclage et principalement le bois de palettes.</li>
-                            <li>Nos créations sur-mesure vous permettent également de répondre parfaitement à vos attentes .</li>
+                            <li>Un atelier social et solidaire situé à Gabès. </li>
+                            <li>Tous nos produits sont fabriqués à partir de matériaux recyclés, en particulier de bois de palette.</li>
+                            <li>Nos créations sur-mesure vous permettent  de répondre parfaitement à vos attentes.</li>
                         </lu>
                     </div>
                     </div>
@@ -68,7 +68,7 @@ const Home = () => {
 
                 <div className="cards">
                     <Cardscg title='Meuble' />
-                    <Cardscg title='Decoration' />
+                    <Cardscg title='D’ecoration' />
                     <Cardscg title='Accessoires' />
                 </div>
                 <CgDiv />

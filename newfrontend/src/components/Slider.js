@@ -5,7 +5,7 @@ import ShopNowBtn from './ShopNowBtn'
 const Slider = () => {
   const SliderData = [
     {
-      title: 'Rien ne se perd rien ne se crée tout se transforme.',
+      title: '‟Rien ne se perd, rien ne se crée, tout se transforme.”',
       subtitle: '-- Antoine Lavoisier --'
     }/*,
     {

@@ -79,7 +79,7 @@
 }
 
 .info-check {
-  margin: 15px 30px;
+  margin: 60px 30px;
   height: 450px;
   display: grid;
   grid-gap: 10px;
@@ -87,7 +87,7 @@
   grid-template-columns: repeat( auto-fit, minmax(30%, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(1fr, 50px));
   row-gap: 8px;
-
+ 
   background-color: #f3f3f3d7;
   justify-items: center;
   padding: 30px;

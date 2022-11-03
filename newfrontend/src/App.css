@@ -131,6 +131,7 @@ nav:nth-child(1)
   justify-content: space-around;
   margin-left: 300px;
   margin-right: 20px;
+ 
 }
 
 .signin {
@@ -391,7 +392,8 @@ nav:nth-child(1)
   background: url("https://i.ibb.co/YW4bBZw/MEUBLE.jpg") no-repeat center top/cover;
 }
 .cardscg:nth-child(2) {
-  background: url("https://i.ibb.co/ThnP41R/CATEGORY-2.jpg") no-repeat center top/cover;
+  background: url("https://i.ibb.co/ThnP41R/CATEGORY-2.jpg") no-repeat  top/cover;
+  background-position: 30% ;
 }
 .cardscg:nth-child(3) {
   background: url("https://i.ibb.co/Zmsxznz/accessoire.jpg") no-repeat center top/cover;
@@ -421,6 +423,7 @@ nav:nth-child(1)
   grid-row: 2/2;
   justify-self: start;
   margin-left: 20px;
+
 }
 
 .filters ul {
@@ -439,10 +442,12 @@ nav:nth-child(1)
 
 .filterbtn,
 .searchbtn {
+ 
+  
   margin-right: 30px;
-  padding: 10px 0;
+  padding: 0px 5px 10px 0;
   outline: none;
-  min-width: 100px;
+  min-width: 120px;
   height: 40px;
   cursor: pointer;
   color: #888;
@@ -450,11 +455,10 @@ nav:nth-child(1)
   border-radius: 3px;
   font-family: "Poppins-Regular", sans-serif;
   background-color: #f2f2f2;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.2;
   transition: all 0.2s;
-  align-items: center;
-  justify-content: center;
+ 
 }
 
 .filterbtn > *,
@@ -782,6 +786,7 @@ nav:nth-child(1)
 .toggle .line3 {
   transform: rotate(45deg) translate(-8px, -6px);
 }
+
 .burgerActive {
   transform: translateX(0%);
 }
@@ -882,4 +887,36 @@ li{
   margin-left:-15px !important;
   margin-right:-15px !important;
  }
+}
+@media only screen and (max-width: 600px) {
+
+
+  .rightComp{
+    width: 20%;
+    height:50vh
+  }
+  .iconCart {
+  
+    position: absolute;
+    right: 15%;
+    top: 0
+
+  }
+  .signin{
+    position: absolute;
+    right: 95%;
+    top: 50%;
+
+  }
+  .menu-admin{
+    position: absolute;
+    right: 150%;
+    top: 60%;
+
+  }
+  .ic_sett_dis{
+    position: absolute;
+    right: 180%;
+    top: 50%;
+  }
 }

@@ -76,11 +76,11 @@ const Checkout = ({ history }) => {
                     <form ref={form} onSubmit={handleorder}>
                         <div className="billing-check">
                             <h1>Informations de livraison </h1>
-                            <label for="name" className="this-label">Prénom</label>
+                            <label for="name" className="this-label">Prénom  <span className="required">*</span></label>
                             <Input name="name" variant="flushed" placeholder="Prénom" required value={name} id="name" onChange={(e) => setName(e.target.value)} /><br />
-                            <label for="lastname" className="this-label">Nom</label><br />
+                            <label for="lastname" className="this-label">Nom <span className="required">*</span></label><br />
                             <Input name="lastname" variant="flushed" placeholder="Nom" required value={lastName} id="lastname" onChange={(e) => setLastName(e.target.value)} /><br />
-                            <label for="address" className="this-label">Address</label><br />
+                            <label for="address" className="this-label">Address <span className="required">*</span></label><br />
                             <Input name="address" variant="flushed" placeholder="Votre adresse" required value={address} id="address" onChange={(e) => setAddress(e.target.value)} /><br />
                             <label className="this-label">Pays</label><br />
                             <Stack spacing={3}>
@@ -346,7 +346,7 @@ const Checkout = ({ history }) => {
                                     <Input name="postalCode" value={postalCode} variant="flushed" required placeholder="Votre code postal" id="zip" onChange={(e) => setPostalCode(e.target.value)} /></div>
                             </div>
                             <div>
-                                <div><label for="Phone number" className="this-label" >Numero de telephone</label>
+                                <div><label for="Phone number" className="this-label" >Numero de telephone <span className="required">*</span></label>
                                     <Input name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} variant="flushed" required type="number" placeholder='telephone' />
                                 </div>
                                 <div><label for="Email" className="this-label" >E-mail </label>
