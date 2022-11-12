@@ -89,7 +89,6 @@
   margin-bottom: 10px;
 }
 .qtyoption {
-  
 }
 
 .sandh {
@@ -140,8 +139,49 @@
     grid-template-columns: 1fr;
   }
 }
-
-
-.checkoutbtndisabled{
-  background-color : #cececece;
+.product_cart_color {
+  width: 50 !important;
+  height: 50 !important;
+  border-end-end-radius: 25 !important;
+  border-color: "black";
+  border-width: 5;
+  padding: 20;
+}
+.checkoutbtndisabled {
+  background-color: #cececece;
+}
+@media screen and (max-width: 768px) {
+  .cartfull h1 {
+    font-size: 1rem !important;
+  }
+  .productname {
+    font-size: 0.9rem !important;
+    margin: 0;
+  }
+  .cart-remove {
+    font-size: 1rem;
+  }
+  .product_cart_color {
+    width: 15px !important;
+    height: 15px !important;
+  }
+  .totalcart {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+  .checkoutbtn {
+    font-size: 0.8rem !important;
+    width: 60%;
+  }
+  .Emptycart {
+    position: relative;
+    top: 20px !important;
+    display: grid;
+    grid-template-columns: 100% !important;
+  }
+  .imagecart {
+    width: 92%;
+    margin-left:4% ;
+   
+  }
 }

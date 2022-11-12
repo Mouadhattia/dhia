@@ -4,14 +4,14 @@ import User from "../models/userModel.js";
 var transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "ardust.tn@gmail.com",
-    pass: "ovcardust66",
+    user: "attiamou3adh@gmail.com",
+    pass: "kxvudrlknawswnga",
   },
 });
 
 export function sendEmail(to, subject, html) {
   const mailOptions = {
-    from: "ardust.tn@gmail.com",
+    from: "attiamou3adh@gmail.com",
     to,
     subject,
     html,

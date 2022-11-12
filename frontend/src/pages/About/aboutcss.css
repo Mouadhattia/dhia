@@ -71,7 +71,17 @@
 @media screen and (max-width: 768px) {
   .Content1,
   .Content2 {
-    margin: 190px 30px;
+   width: 95% !important;
     grid-template-columns: 1fr;
   }
+  .Content1,
+  .Content2 p {
+    font-size: 0.8rem;
+  }
+  .Content2 h1 {
+    font-size: 20px !important;
+    
+  }
+ 
+  
 }

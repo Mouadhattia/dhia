@@ -23,42 +23,6 @@
   height: max-content;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*CHECK OUT */
 .detailsdisable {
   /* display: none; */
@@ -73,21 +37,20 @@
   transition: all 0.5s linear;
 }
 
-
-.shipping-placeorder{
+.shipping-placeorder {
   max-width: 500px;
 }
-
+.shipping-info-check,
 .info-check {
   margin: 60px 30px;
   height: 450px;
   display: grid;
   grid-gap: 10px;
 
-  grid-template-columns: repeat( auto-fit, minmax(30%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(1fr, 50px));
   row-gap: 8px;
- 
+
   background-color: #f3f3f3d7;
   justify-items: center;
   padding: 30px;
@@ -169,8 +132,7 @@
 .your-products h1 {
   display: flex;
 }
-.order-controls
-{
+.order-controls {
   margin-top: 30px;
 }
 .cart-summ {
@@ -192,90 +154,44 @@
   justify-content: flex-end;
 }
 
+
 /* MEDIA QUERIS SCREEN 768px */
 @media screen and (max-width: 768px) {
   .info-check {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     padding: 10px 20px;
+    margin-left: -24px;
+ 
+  }
+  .shipping-info-check{
+    display: block;
+  }
+  .your-products h1 {
+    font-size: 17px;
+  }
+  .btna2{
+    
+    font-size: 14px;
   }
 }
 
-
-
-.your-products > h1:nth-child(1) > span:nth-child(2)
-{
+.your-products > h1:nth-child(1) > span:nth-child(2) {
   margin-left: 15px;
 }
 
-
-
-.update-order-disabled  {
+.update-order-disabled {
   opacity: 0.8 !important;
   cursor: not-allowed;
   background-color: dimgray;
 }
 
-.update-order-disabled:hover  {
+.update-order-disabled:hover {
   opacity: 0.8;
   cursor: not-allowed;
   background-color: dimgray;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .cartfull {
   display: grid;
@@ -288,8 +204,8 @@
   margin-top: 60px;
   height: fit-content;
   border: solid 1px black;
-  padding : 20px;
-  background-color: #FAFAFA;
+  padding: 20px;
+  background-color: #fafafa;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -370,8 +286,6 @@
   margin-bottom: 10px;
 }
 .qtyoption {
-
-  
 }
 .sandh {
   margin-top: 70px;
@@ -406,6 +320,7 @@
   width: 100%;
 }
 @media screen and (max-width: 768px) {
+ 
   .productcart {
     margin: 10px 0;
     grid-template-columns: 30% 40% 10% 20%;
@@ -422,7 +337,6 @@
   }
 }
 
-
-.checkoutbtndisabled{
-  background-color : #cececece;
+.checkoutbtndisabled {
+  background-color: #cececece;
 }

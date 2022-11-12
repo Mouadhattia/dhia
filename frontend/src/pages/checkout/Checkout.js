@@ -72,7 +72,7 @@ const Checkout = ({ history }) => {
                 <title>Checkout</title>
             </Helmet>
             <div className="limit-check">
-                <div className="info-check">
+                <div className="shipping-info-check">
                     <form ref={form} onSubmit={handleorder}>
                         <div className="billing-check">
                             <h1>Informations de livraison </h1>
@@ -395,7 +395,9 @@ const Checkout = ({ history }) => {
                                 </div>
                             </>
                         }
-                        <div style={{
+                        <div 
+                        className='checkout-note'
+                        style={{
                             display: "inline-block",
                             color: "#CC4528AA",
                             fontWeight: 600,

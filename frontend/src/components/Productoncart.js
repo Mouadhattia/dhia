@@ -101,7 +101,7 @@ const Productoncart = ({ product }) => {
                     </h2>
                     {
                         window.mobileAndTabletCheck() ?
-                            <span onClick={() => removeFromCartHandler(product)}>
+                            <span className='cart-remove' onClick={() => removeFromCartHandler(product)}>
                                 Enlever
                             </span> : <FaRegWindowClose className='deletecart' size='26' onClick={() => removeFromCartHandler(product)} />
                     }
@@ -114,16 +114,16 @@ const Productoncart = ({ product }) => {
                     }}
                 >{
                         product?.imagesColors?.map((c, i) => {
-                            return (<div
+                            return (<div className='product_cart_color'
                                 style={{
-                                    width: 50,
-                                    height: 50,
+                                    width: "50px",
+                                    height: "50px",
                                     borderRadius: 25,
                                     backgroundColor: c,
                                     ... (selectedColor === c ? {
                                         borderColor: "black",
-                                        borderWidth: 5,
-                                        padding: 20
+                                        borderWidth: "5px",
+                                        padding: "20px"
                                     } : {})
                                 }} onClick={e => {
                                     const val = dispatch(updateCart({

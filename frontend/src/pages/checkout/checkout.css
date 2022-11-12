@@ -24,7 +24,7 @@ margin-left: 8px;
   height: 450px;
   display: grid;
   grid-gap: 10px;
-
+ 
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(1fr, 50px));
   row-gap: 8px;
@@ -134,5 +134,9 @@ margin-left: 8px;
   .info-check {
     display: block;
     padding: 10px 20px;
+  }
+  .checkout-note{
+ 
+    width: 100% !important;
   }
 }

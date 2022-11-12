@@ -2,6 +2,7 @@ import asyncHandler from 'express-async-handler'
 import {sendEmail} from "./../services/mailer.js"
 import Order from '../models/orderModel.js'
 import User from '../models/userModel.js'
+import jwt from 'jsonwebtoken';
 
 // @desc Create new order
 // @route POST /api/orders

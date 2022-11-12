@@ -45,12 +45,18 @@ const RegisterScreen = () => {
 
   const submitHandler = (e) => {
     e.preventDefault()
-    if(password !== confirmPassword){
+    let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})')
+    if(strongPassword.test(password)){
+      if(password !== confirmPassword){
         setMessage('Le mot de passe ne correspond pas')
     }
     else{
         dispatch(register(name, email, password))
     }
+    }else{
+      setMessage('Le mot de passe doit comporter au moins 8 caractères et doit comporter au moins une majuscule, une minuscule et un caractère numérique .')
+    }
+   
     
   }
 

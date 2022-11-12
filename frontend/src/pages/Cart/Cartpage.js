@@ -9,7 +9,7 @@ import Productoncart from '../../components/Productoncart';
 import './cartcss.css'
 import {useNavigate, useParams} from 'react-router-dom'
 
-const Cartpage = ({ match, location, history }) => {
+const Cartpage = ({ history }) => {
     const { id } = useParams();
 
     function getQueryVariable(variable) {

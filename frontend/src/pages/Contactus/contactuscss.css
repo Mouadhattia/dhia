@@ -133,3 +133,19 @@
     border: 1px solid rgba(179, 179, 179, 0.664);
   }
 }
+@media only screen and (max-width: 600px) {
+  .card-contact{
+    width: 100%;
+    margin: 0;
+  }
+  .sendMsg h4 {
+    font-size: 1.5rem;
+  }
+  .showAdrss{
+    width: 100%;
+
+  }
+  .showAdrss h3 {
+    font-size: 1rem;
+  }
+}

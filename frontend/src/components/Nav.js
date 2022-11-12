@@ -129,21 +129,21 @@ const Nav = () => {
         <ul className="navLinks" ref={navLinks}>
           <NavLink
             to="/shop"
-            activeClassName="activlink"
+            activeclassname="activlink"
             onClick={onBurgActive}
           >
             <li>Boutique</li>
           </NavLink>
           <NavLink
             to="/contactus"
-            activeClassName="activlink"
+            activeclassname="activlink"
             onClick={onBurgActive}
           >
             <li>Contact</li>
           </NavLink>
           <NavLink
             to="/about"
-            activeClassName="activlink"
+            activeclassname="activlink"
             onClick={onBurgActive}
           >
             <li>À propos</li>

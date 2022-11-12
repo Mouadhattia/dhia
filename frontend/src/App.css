@@ -890,7 +890,11 @@ li{
 }
 @media only screen and (max-width: 600px) {
 
+.product_cart_color{
 
+padding: 15px !important;
+ border-width: 1px !important;
+}
   .rightComp{
     width: 20%;
     height:50vh
